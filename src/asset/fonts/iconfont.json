@@ -1,0 +1,184 @@
+{
+  "id": "2796196",
+  "name": "VS-ico",
+  "font_family": "vs",
+  "css_prefix_text": "vs-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24302855",
+      "name": "show",
+      "font_class": "show",
+      "unicode": "ed95",
+      "unicode_decimal": 60821
+    },
+    {
+      "icon_id": "24302856",
+      "name": "hide",
+      "font_class": "hide",
+      "unicode": "ed96",
+      "unicode_decimal": 60822
+    },
+    {
+      "icon_id": "24180385",
+      "name": "InputNumber",
+      "font_class": "InputNumber",
+      "unicode": "ed94",
+      "unicode_decimal": 60820
+    },
+    {
+      "icon_id": "24179978",
+      "name": "Button",
+      "font_class": "Button",
+      "unicode": "ed7e",
+      "unicode_decimal": 60798
+    },
+    {
+      "icon_id": "24179979",
+      "name": "Date",
+      "font_class": "Date",
+      "unicode": "ed7f",
+      "unicode_decimal": 60799
+    },
+    {
+      "icon_id": "24179980",
+      "name": "Flex",
+      "font_class": "Flex",
+      "unicode": "ed80",
+      "unicode_decimal": 60800
+    },
+    {
+      "icon_id": "24179981",
+      "name": "Form",
+      "font_class": "Form",
+      "unicode": "ed81",
+      "unicode_decimal": 60801
+    },
+    {
+      "icon_id": "24179982",
+      "name": "ButtonGrord",
+      "font_class": "ButtonGrord",
+      "unicode": "ed82",
+      "unicode_decimal": 60802
+    },
+    {
+      "icon_id": "24179983",
+      "name": "Page",
+      "font_class": "Page",
+      "unicode": "ed83",
+      "unicode_decimal": 60803
+    },
+    {
+      "icon_id": "24179984",
+      "name": "Crud",
+      "font_class": "Crud",
+      "unicode": "ed84",
+      "unicode_decimal": 60804
+    },
+    {
+      "icon_id": "24179985",
+      "name": "Month",
+      "font_class": "Month",
+      "unicode": "ed85",
+      "unicode_decimal": 60805
+    },
+    {
+      "icon_id": "24179986",
+      "name": "Textarea",
+      "font_class": "Textarea",
+      "unicode": "ed86",
+      "unicode_decimal": 60806
+    },
+    {
+      "icon_id": "24179987",
+      "name": "Input",
+      "font_class": "Input",
+      "unicode": "ed87",
+      "unicode_decimal": 60807
+    },
+    {
+      "icon_id": "24179988",
+      "name": "Divider",
+      "font_class": "Divider",
+      "unicode": "ed88",
+      "unicode_decimal": 60808
+    },
+    {
+      "icon_id": "24179989",
+      "name": "Radio",
+      "font_class": "Radio",
+      "unicode": "ed89",
+      "unicode_decimal": 60809
+    },
+    {
+      "icon_id": "24179990",
+      "name": "Datetime",
+      "font_class": "Datetime",
+      "unicode": "ed8a",
+      "unicode_decimal": 60810
+    },
+    {
+      "icon_id": "24179991",
+      "name": "wrapper",
+      "font_class": "wrapper",
+      "unicode": "ed8b",
+      "unicode_decimal": 60811
+    },
+    {
+      "icon_id": "24179992",
+      "name": "Year",
+      "font_class": "Year",
+      "unicode": "ed8c",
+      "unicode_decimal": 60812
+    },
+    {
+      "icon_id": "24179993",
+      "name": "Property",
+      "font_class": "Property",
+      "unicode": "ed8d",
+      "unicode_decimal": 60813
+    },
+    {
+      "icon_id": "24179994",
+      "name": "Switch",
+      "font_class": "Switch",
+      "unicode": "ed8e",
+      "unicode_decimal": 60814
+    },
+    {
+      "icon_id": "24179995",
+      "name": "Checkboxs",
+      "font_class": "Checkboxs",
+      "unicode": "ed8f",
+      "unicode_decimal": 60815
+    },
+    {
+      "icon_id": "24179996",
+      "name": "Tpl",
+      "font_class": "Tpl",
+      "unicode": "ed90",
+      "unicode_decimal": 60816
+    },
+    {
+      "icon_id": "24179997",
+      "name": "Select",
+      "font_class": "Select",
+      "unicode": "ed91",
+      "unicode_decimal": 60817
+    },
+    {
+      "icon_id": "24179998",
+      "name": "TreeSelect",
+      "font_class": "TreeSelect",
+      "unicode": "ed92",
+      "unicode_decimal": 60818
+    },
+    {
+      "icon_id": "24179999",
+      "name": "Tree",
+      "font_class": "Tree",
+      "unicode": "ed93",
+      "unicode_decimal": 60819
+    }
+  ]
+}

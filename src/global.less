@@ -1,0 +1,494 @@
+
+.vscode-dark {
+  padding: 0;
+}
+#root {
+  height: 100%;
+  
+  // --primary: #177DDC;
+  // --Button--primary-bg: #177DDC;
+  // --Button--primary-border: #177DDC;
+  // --Button--primary-onHover-bg: #0566C0;
+  // --Button--primary-onHover-border: #0566C0;
+  // padding: 24px 0 0 16px;
+}
+.ant-tabs {
+  height: 100%;
+}
+
+.ant-tabs-tab + .ant-tabs-tab{
+  margin-left: 24px !important;
+}
+.ant-tabs-nav {
+  margin-bottom: 2px !important;
+  padding-left: 8px;
+}
+.right-collapse {
+  .ant-collapse-content {
+    border: 1px solid !important;
+    border-radius: 4px;
+  }
+  .ant-collapse-content-box {
+    padding-top: 0 !important;
+  }
+}
+
+.temporary-node-back {
+  border: 1px dashed aqua;
+}
+
+// .bizsdkdnd-class {
+//   &:hover {
+//     border: 1px dashed aqua;
+//   }
+// }
+.ant-collapse-header {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.ae-Preview-widgets {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  .ae-Editor-tip {
+    left: -1px;
+    top: -18px;
+    position: absolute;
+    background: #1890ff;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius: 3px 3px 0 0;
+    line-height: 1.2;
+    z-index: 1204;
+    white-space: nowrap;
+    box-shadow: 0 -2px 5px rgb(255 255 255 / 50%);
+  }
+  #ae-hover-box {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #69c0ff;
+    .ae-Editor-tip {
+      background: #69c0ff;
+    }
+  }
+  #ae-click-box {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    // pointer-events: painted;
+    border: 1px solid #1890ff;
+    background-color: rgba(66, 133, 244, 0.1);
+    &:hover {
+      pointer-events: painted;
+    }
+    .ae-Editor-tip {
+      background: #1890ff;
+    }
+    #ae-click-last {
+      position: absolute;
+      top: -24px;
+      left: calc(50% - 12px);
+      z-index: 250;
+      pointer-events: auto;
+    }
+    #ae-click-next {
+      position: absolute;
+      bottom: -24px;
+      left: calc(50% - 12px);
+      z-index: 250;
+      pointer-events: auto;
+    }
+    .ae-click-btns {
+      position: absolute;
+      top: -24px;
+      right: -1px;
+      z-index: 300;
+      width: max-content;
+      .ant-btn {
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+.basic-components-drawer {
+  .ant-drawer-content-wrapper {
+    width: 306px !important;
+  }
+  .ant-drawer-body {
+    padding: 0;
+    .ant-collapse{
+      background-color: #1E1E1E;
+    }
+    .ant-radio-wrapper {
+      display: inline-flex;
+      width: 120px;
+      padding: 4px 8px;
+      margin: 6px;
+      // border: 1px solid #767676;
+      font-size: 12px;
+      border-radius: 4px;
+      background-color: #2B2B2B;
+    }
+    .ant-radio-wrapper-checked {
+      // border-color: #024673;
+      background-color: #024673;
+    }
+    .ant-radio {
+      display: none;
+    }
+  }
+}
+
+.a-ButtonGroup {
+  .a-Button {
+    display: inline-block;
+  }
+}
+
+// page页面高度
+.a-Page {
+  height: auto !important;
+}
+// 去除侧面栏多余线
+.a-Page-aside::before {
+  content: unset !important;
+}
+
+// 去除tree视图边框
+.bizsdkdnd-class .a-TreeControl {
+  border: none;
+}
+
+.a-Page-content > .a-Page-main > .a-Page-header {
+  background-color: #fff;
+}
+
+.a-Table-toolbar.a-Table-headToolbar > .a-Table-actions {
+  display: none;
+}
+
+.ae-Preview.is-edting input,
+.ae-Preview.is-edting textarea,
+.ae-Preview.is-edting select,
+// .ae-Preview.is-edting .a-TreeControl,
+.ae-Preview.is-edting .a-Tree-item,
+.ae-Preview.is-edting .a-SelectControl,
+.ae-Preview.is-edting iframe {
+  pointer-events: none;
+}
+.ae-Preview.is-edting{
+  .visible-box{
+    &::before{
+      content: "<Dynamic Display>";
+      z-index: 10;
+      color: #6c717c;
+      border: 1px dashed #ced0d3;
+      background: rgba(10,19,37,.05);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.a-Number-input{
+  color: #58666e;
+}
+
+// 设置区块卡片的样式
+.block-card{
+  width: 100%;
+  background: #272727 !important;
+  border: 1px solid #4E4E4E !important;
+  .ant-card-body{
+    padding: 6px 12px !important;
+  }
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width:10px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  background:#1e1e1e;
+  border-left: 1px solid #393939;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background:#4F4F4F;
+}
+::-webkit-scrollbar-thumb{
+  &:hover{
+    background:#606060;
+  }
+}
+
+// basic样式
+.drag-components-item{
+  cursor: move;
+  display: inline-block;
+  width: 106px;
+  // width: 89px;
+  padding: 3px 8px;
+  margin: 4px;
+  text-align: left;
+  // color: #767676;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFF;
+  // border: 1px solid #767676;
+  border-radius: 4px;
+  background-color: #2B2B2B;
+  &:hover{
+    background: #024673;
+    // border: 1px solid #017ACC;
+  }
+}
+
+.toggle-left-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: #2E2E2E;
+  border-radius: 3px;
+}
+
+.ant-tabs-card > .ant-tabs-nav{
+  &::before{
+    content: none !important;
+  }
+}
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab, .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab{
+  
+}
+
+.normal-tab > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list .ant-tabs-tab{
+  padding: 8px 0 !important;
+}
+
+.ant-radio-group .ant-radio-button-wrapper{
+  height: 28px;
+  line-height: 26px;
+  // border-radius: 4px !important;
+  // margin-right: 12px;
+  // border: 1px solid #434343;
+}
+
+.ant-tabs-card > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list > .ant-tabs-tab{
+  margin-top: 8px;
+  background: #2D2D2E;
+}
+
+.ant-tabs-card > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list > .ant-tabs-tab{
+  margin-left: 2px !important;
+}
+
+#rightPage .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding: 8px;
+}
+
+#rightPage .ant-collapse-content > .ant-collapse-content-box{
+  padding: 8px;
+  padding-top: 0;
+}
+
+#leftPage .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding: 8px;
+}
+
+#leftPage .ant-collapse-content > .ant-collapse-content-box{
+  padding: 8px;
+  padding-top: 0;
+}
+
+.ant-tabs-card > .ant-tabs-nav > .ant-tabs-nav-wrap > .ant-tabs-nav-list > .ant-tabs-tab{
+  border-right: 1px solid #1e1e1e;
+}
+
+// 字体整体缩小
+.ant-tabs-tab-btn{
+  font-size: 12px;
+}
+#rightPage .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  font-size: 12px;
+}
+.drag-components-item{
+  font-size: 12px;
+}
+.a-Form-item--normal > .a-Form-label{
+  font-size: 12px;
+}
+
+#rightPage,.css-picker-form {
+  .ant-table{
+    font-size: 12px;
+  }
+  .ant-select{
+    font-size: 12px;
+  }
+  .a-TplField{
+    font-size: 12px;
+  }
+  .a-Collapse-header{
+    .a-TplField{
+      color: rgba(255, 255, 255, 0.85);
+    }
+    .a-Collapse-arrow{
+      &::before{
+        border-color: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
+  .a-TextControl-input input{
+    font-size: 12px;
+  }
+  .a-ButtonGroup .a-Button--primary.is-active{
+    color: #fff;
+    border-color: #177DDC;
+    background-color: #177DDC;
+  }
+  .a-Combo-addBtn{
+    border-color: #177DDC;
+    background-color: #177DDC;
+  }
+  .a-Switch.is-checked{
+    background-color: #177DDC;
+  }
+  .a-TextareaControl{
+    color: #58666e;
+  }
+  .a-Remark:hover > .a-Remark-icon{
+    border-color: #177DDC;
+    background-color: #177DDC;
+  }
+  .a-Checkbox--radio input:checked + i:before{
+    background-color: #177DDC;
+  }
+  // basic-form-tab样式修改
+  .basic-form-tab{
+    .ant-tabs-tab{
+      padding: 4px 12px;
+      margin-right: 12px;
+      border-radius: 5px;
+      border-color: #959595;
+      background-color: #1E1E1E;
+    }
+    .ant-tabs-tab-active{
+      border-color: #177ddc;
+    }
+  }
+  
+}
+
+#leftPage{
+  // basic-form-tab样式修改
+  .basic-form-tab{
+    .ant-tabs-tab{
+      padding: 4px 12px;
+      margin-right: 12px;
+      border-radius: 5px;
+      border-color: #959595;
+      background-color: #1E1E1E;
+    }
+    .ant-tabs-tab-active{
+      border-color: #177ddc;
+    }
+  }
+}
+
+
+#leftPage {
+  .ant-tabs-nav-operations{
+    display: none;
+  }
+}
+
+.leftPage-show{
+  display: block;
+  width: 1000%;
+}
+
+.leftPage-hide{
+  display: block;
+  width: 0% !important;
+}
+
+#leftPage{
+  transition: width .3s cubic-bezier(.7,.3,.1,1);
+  .ant-radio-group{
+    width: 100%;
+    display: flex;
+    .ant-radio-button-wrapper{
+      flex: 1;
+    }
+  }
+}
+
+.model-editable-card{
+  .ant-tabs-nav-add{
+    display: none;
+  }
+}
+
+// css-picker-renderer
+.css-picker-form{
+  .a-Wrapper > .a-TplField span{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
+  .a-Form-item--horizontal > .a-Form-label{
+    font-size: 12px;
+  }
+  .a-Form-item--horizontal > .a-Form-label{
+    text-align: left;
+  }
+  .a-Form-item--horizontal > .a-Form-value{
+    text-align: left;
+  }
+  .a-Form-item{
+    margin-bottom: 8px;
+  }
+  .a-Wrapper--md{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.crud-toolbar-combo{
+  .a-Select-value{
+    max-width: 72px;
+  }
+}
+
+.drawer-insert-comp{
+  span.ant-radio + *{
+    display: flex;
+    align-items: center;
+  }
+  .comp-text{
+    width: 66px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

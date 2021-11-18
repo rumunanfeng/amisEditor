@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "vs"; /* Project id 2796196 */
+  src: url('iconfont.woff2?t=1631519050379') format('woff2'),
+       url('iconfont.woff?t=1631519050379') format('woff'),
+       url('iconfont.ttf?t=1631519050379') format('truetype');
+}
+
+.vs {
+  font-family: "vs" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vs-show:before {
+  content: "\ed95";
+}
+
+.vs-hide:before {
+  content: "\ed96";
+}
+
+.vs-InputNumber:before {
+  content: "\ed94";
+}
+
+.vs-Button:before {
+  content: "\ed7e";
+}
+
+.vs-Date:before {
+  content: "\ed7f";
+}
+
+.vs-Flex:before {
+  content: "\ed80";
+}
+
+.vs-Form:before {
+  content: "\ed81";
+}
+
+.vs-ButtonGrord:before {
+  content: "\ed82";
+}
+
+.vs-Page:before {
+  content: "\ed83";
+}
+
+.vs-Crud:before {
+  content: "\ed84";
+}
+
+.vs-Month:before {
+  content: "\ed85";
+}
+
+.vs-Textarea:before {
+  content: "\ed86";
+}
+
+.vs-Input:before {
+  content: "\ed87";
+}
+
+.vs-Divider:before {
+  content: "\ed88";
+}
+
+.vs-Radio:before {
+  content: "\ed89";
+}
+
+.vs-Datetime:before {
+  content: "\ed8a";
+}
+
+.vs-wrapper:before {
+  content: "\ed8b";
+}
+
+.vs-Year:before {
+  content: "\ed8c";
+}
+
+.vs-Property:before {
+  content: "\ed8d";
+}
+
+.vs-Switch:before {
+  content: "\ed8e";
+}
+
+.vs-Checkboxs:before {
+  content: "\ed8f";
+}
+
+.vs-Tpl:before {
+  content: "\ed90";
+}
+
+.vs-Select:before {
+  content: "\ed91";
+}
+
+.vs-TreeSelect:before {
+  content: "\ed92";
+}
+
+.vs-Tree:before {
+  content: "\ed93";
+}
+
