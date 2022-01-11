@@ -15,12 +15,10 @@ import 'amis/lib/locale/en-US';
 // import 'amis/lib/helper.css';
 import 'amis/lib/themes/cxd.css';
 import 'amis/lib/helper.css';
-import 'amis/sdk/iconfont.css';
+// import 'amis/sdk/iconfont.css';
 import '../utils/icons';
 import '../global.less';
 import '../build.less';
-
-
 
 export default function IndexPage() {
   const [draggingItem, setDraggingItem] = useState({ name: 'input' });
@@ -29,197 +27,197 @@ export default function IndexPage() {
   const [isPreview, setIsPreview] = useState(false);
   const [codeUpdateKey, setCodeUpdateKey] = useState(0);
   const [currentBoxClass, setCurrentBoxClass] = useState('');
-  const [pageInfo, setPageInfo] = useState({})
+  const [pageInfo, setPageInfo] = useState({});
 
   let initData = {
-    "type": "page",
-    "aside": [
+    type: 'page',
+    aside: [
       {
-        "type": "flex",
-        "className": "b-b",
-        "items": [
+        type: 'flex',
+        className: 'b-b',
+        items: [
           {
-            "type": "wrapper",
-            "className": "p-sm",
-            "body": [
+            type: 'wrapper',
+            className: 'p-sm',
+            body: [
               {
-                "type": "tpl",
-                "tpl": "Rule Context",
-                "inline": false
-              }
-            ]
+                type: 'tpl',
+                tpl: 'Rule Context',
+                inline: false,
+              },
+            ],
           },
           {
-            "type": "wrapper",
-            "className": "p-sm",
-            "body": [
+            type: 'wrapper',
+            className: 'p-sm',
+            body: [
               {
-                "type": "button-group",
-                "buttons": [
+                type: 'button-group',
+                buttons: [
                   {
-                    "type": "button",
-                    "label": "",
-                    "size": "xs",
-                    "icon": "fa fa-plus"
-                  }
-                ]
-              }
-            ]
-          }
+                    type: 'button',
+                    label: '',
+                    size: 'xs',
+                    icon: 'fa fa-plus',
+                  },
+                ],
+              },
+            ],
+          },
         ],
-        "justify": "space-between",
-        "alignItems": "center",
-        "direction": "row"
+        justify: 'space-between',
+        alignItems: 'center',
+        direction: 'row',
       },
       {
-        "type": "flex",
-        "items": [
+        type: 'flex',
+        items: [
           {
-            "type": "wrapper",
-            "body": [
+            type: 'wrapper',
+            body: [
               {
-                "type": "select",
-                "name": "system",
-                "options": [
+                type: 'select',
+                name: 'system',
+                options: [
                   {
-                    "label": "OSS_IM",
-                    "value": "oss_im"
-                  }
-                ]
-              }
+                    label: 'OSS_IM',
+                    value: 'oss_im',
+                  },
+                ],
+              },
             ],
-            "className": "flex-1 p-sm p-b-none"
+            className: 'flex-1 p-sm p-b-none',
           },
           {
-            "type": "wrapper",
-            "body": [
+            type: 'wrapper',
+            body: [
               {
-                "type": "select",
-                "name": "type",
-                "options": [
+                type: 'select',
+                name: 'type',
+                options: [
                   {
-                    "label": "类型1",
-                    "value": "1"
-                  }
-                ]
-              }
+                    label: '类型1',
+                    value: '1',
+                  },
+                ],
+              },
             ],
-            "className": "flex-1 p-sm p-b-none"
-          }
-        ]
+            className: 'flex-1 p-sm p-b-none',
+          },
+        ],
       },
       {
-        "type": "input-text",
-        "label": "",
-        "name": "keyword",
-        "className": "p-sm",
-        "addOn": {
-          "label": "",
-          "type": "text",
-          "position": "right",
-          "icon": "fa fa-search"
+        type: 'input-text',
+        label: '',
+        name: 'keyword',
+        className: 'p-sm',
+        addOn: {
+          label: '',
+          type: 'text',
+          position: 'right',
+          icon: 'fa fa-search',
         },
-        "placeholder": "Please Enter Keyword Query"
+        placeholder: 'Please Enter Keyword Query',
       },
       {
-        "type": "form",
-        "submitOnChange": true,
-        "wrapWithPanel": false,
-        "target": "my_form",
-        "body": [
+        type: 'form',
+        submitOnChange: true,
+        wrapWithPanel: false,
+        target: 'my_form',
+        body: [
           {
-            "type": "input-tree",
-            "label": "",
-            "name": "treeData",
-            "showRadio": true,
-            "multiple": false,
-            "joinValues": false,
-            "className": "no-border",
-            "labelField": "name",
-            "valueField": "id",
-            "source": {
-              "name": "getTree",
-              "method": "get",
-              "url": "https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree"
+            type: 'input-tree',
+            label: '',
+            name: 'treeData',
+            showRadio: true,
+            multiple: false,
+            joinValues: false,
+            className: 'no-border',
+            labelField: 'name',
+            valueField: 'id',
+            source: {
+              name: 'getTree',
+              method: 'get',
+              url: 'https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree',
             },
-            "addApi": {
-              "name": "addTree",
-              "method": "post",
-              "url": "https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree"
+            addApi: {
+              name: 'addTree',
+              method: 'post',
+              url: 'https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree',
             },
-            "creatable": true,
-            "editApi": {
-              "name": "editTree",
-              "method": "put",
-              "url": "https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree"
+            creatable: true,
+            editApi: {
+              name: 'editTree',
+              method: 'put',
+              url: 'https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree',
             },
-            "editable": true,
-            "deleteApi": {
-              "name": "deleteTree",
-              "method": "delete",
-              "url": "https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree?id=${id}"
+            editable: true,
+            deleteApi: {
+              name: 'deleteTree',
+              method: 'delete',
+              url: 'https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/tree?id=${id}',
             },
-            "removable": true,
-            "addControls": [
+            removable: true,
+            addControls: [
               {
-                "name": "name",
-                "label": "name",
-                "type": "input-text"
+                name: 'name',
+                label: 'name',
+                type: 'input-text',
               },
               {
-                "name": "start_date",
-                "label": "start_date",
-                "type": "input-text"
-              }
+                name: 'start_date',
+                label: 'start_date',
+                type: 'input-text',
+              },
             ],
-            "editControls": [
+            editControls: [
               {
-                "name": "name",
-                "label": "name",
-                "type": "input-text"
+                name: 'name',
+                label: 'name',
+                type: 'input-text',
               },
               {
-                "name": "start_date",
-                "label": "start_date",
-                "type": "input-text"
-              }
+                name: 'start_date',
+                label: 'start_date',
+                type: 'input-text',
+              },
             ],
-            "body": []
-          }
-        ]
-      }
-    ],
-    "body": [
-      {
-        "type": "form",
-        "body": [
-          {
-            "name": "id",
-            "label": "id1",
-            "type": "input-text"
+            body: [],
           },
-          {
-            "name": "name",
-            "label": "name1",
-            "type": "input-text"
-          },
-          {
-            "name": "start_date",
-            "label": "start_date1",
-            "type": "input-text"
-          }
         ],
-        "api": {
-          "type": "get",
-          "method": "getList",
-          "url": "https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/list"
-        }
-      }
+      },
     ],
-    "asideClassName": "b-a bg-white m-r-sm w-96",
-    "bodyClassName": "b-l b-r b-b bg-white",
-    "headerClassName": "",
-    "title": "Basic Information"
+    body: [
+      {
+        type: 'form',
+        body: [
+          {
+            name: 'id',
+            label: 'id1',
+            type: 'input-text',
+          },
+          {
+            name: 'name',
+            label: 'name1',
+            type: 'input-text',
+          },
+          {
+            name: 'start_date',
+            label: 'start_date1',
+            type: 'input-text',
+          },
+        ],
+        api: {
+          type: 'get',
+          method: 'getList',
+          url: 'https://www.fastmock.site/mock/5d74c58f4df39b526ef1713a19a222b6/ab/list',
+        },
+      },
+    ],
+    asideClassName: 'b-a bg-white m-r-sm w-96',
+    bodyClassName: 'b-l b-r b-b bg-white',
+    headerClassName: '',
+    title: 'Basic Information',
   };
 
   const [codeObjBack, setCodeObjBack] = useState(initData);
@@ -229,23 +227,26 @@ export default function IndexPage() {
     window.addEventListener('keydown', ctrlSSave);
     return () => {
       window.removeEventListener('keydown', ctrlSSave);
-    }
-  })
+    };
+  });
 
-  function ctrlSSave(e:any){
+  function ctrlSSave(e: any) {
     if (e.repeat) {
-      return
+      return;
     }
-    if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)){
+    if (
+      e.keyCode == 83 &&
+      (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)
+    ) {
       e.preventDefault();
-      window.removeEventListener("keydown", ctrlSSave)
-      saveData()
+      window.removeEventListener('keydown', ctrlSSave);
+      saveData();
     }
   }
   // 保存页面
-  function saveData () {
+  function saveData() {
     try {
-      setPageInfo({...pageInfo, code: codeObj})
+      setPageInfo({ ...pageInfo, code: codeObj });
       message.success('Save successfully');
     } catch (error) {
       message.error(error.message);

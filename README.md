@@ -1,16 +1,26 @@
 # Amis Editor
 
-基于Amis开发的页面设计器，参照amis-editor-demo
 
-## Getting Started
+基于[Amis](https://baidu.gitee.io/amis/zh-CN/docs/index)开发的页面设计器，参照amis-editor-demo。
+​
 
-Install dependencies,
+## 预览项目
+​[DEMO](https://rumunanfeng.github.io/amisEditor/dist)
+
+
+## 快速开始
+
+
+安装依赖
+
 
 ```bash
 $ yarn
 ```
 
-Start the dev server,
+
+本地启动
+
 
 ```bash
 $ yarn start

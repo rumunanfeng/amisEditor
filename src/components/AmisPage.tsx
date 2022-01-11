@@ -7,7 +7,7 @@ import { indexContext } from '../state/context-manager';
 import { fetcher } from '../utils/fetcher';
 
 import 'amis/lib/themes/default.css';
-import 'font-awesome/css/font-awesome.css';
+// import 'font-awesome/css/font-awesome.css';
 import '../asset/fonts/iconfont.css';
 
 export const AmisPage: FC = () => {
@@ -15,11 +15,20 @@ export const AmisPage: FC = () => {
   // bizsdkdnd-path 后面跟的是元素路径，如body.0-body.0
   // bizsdkdnd-ct 代表容器类型，如body,aside,buttons等
   function setClassName(item: any, suffix: string) {
-    const typeName = ['page', 'form', 'flex', 'wrapper', 'group', 'service'].includes(item.type)
+    const typeName = [
+      'page',
+      'form',
+      'flex',
+      'wrapper',
+      'group',
+      'service',
+    ].includes(item.type)
       ? 'box'
       : 'item';
 
-    const isBody = ['page', 'form', 'wrapper', 'group', 'service'].includes(item.type);
+    const isBody = ['page', 'form', 'wrapper', 'group', 'service'].includes(
+      item.type,
+    );
 
     // 是否有panel包裹
     const isPanel = item.type === 'form' && item.wrapWithPanel !== false;
@@ -44,8 +53,8 @@ export const AmisPage: FC = () => {
     }
 
     if (item.visibleOn) {
-      item.visibleOn = isPreview ? item.visibleOn : true
-      item[classKey] += ' visible-box'
+      item.visibleOn = isPreview ? item.visibleOn : true;
+      item[classKey] += ' visible-box';
     }
 
     if (item.type === 'page') {
@@ -84,12 +93,13 @@ export const AmisPage: FC = () => {
           );
         });
       }
-    } else if(item.type === 'input-tree') {
-      item.initiallyOpen = isPreview ? item.initiallyOpen : false
+    } else if (item.type === 'input-tree') {
+      item.initiallyOpen = isPreview ? item.initiallyOpen : false;
     } else if (item.type === 'crud') {
       // item[classKey] += ' bizsdkdnd-ct-filter.body';
-      if(item.filter) {
-        let filterClassName = item.filter.wrapWithPanel !== false ? 'panelClassName' : 'className';
+      if (item.filter) {
+        let filterClassName =
+          item.filter.wrapWithPanel !== false ? 'panelClassName' : 'className';
         const prefixClass = `bizsdkdnd-class bizsdkdnd-${item.type}`;
         item.filter[
           filterClassName
